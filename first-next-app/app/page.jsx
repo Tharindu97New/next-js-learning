@@ -12,10 +12,8 @@ export default function Home() {
         <li>About</li>
         <li>Contact Us</li>
         <li><Link href="/about/branches" className={styles.link}>Branches</Link></li>
-
         <li><Link href="/products/meat" className={styles.link}>Meat Page</Link></li>
         <li><Link href="/products/vegis" id={styles.specalLink}>Vegis Page</Link></li>
-        
       </ul>
     </>
   );
