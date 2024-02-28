@@ -1,0 +1,11 @@
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: red;
+}
+
+#specalLink {
+  color: yellow;
+}
