@@ -12,7 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="wrapper">
+      {children}
+        {/* <div className="wrapper">
           <div className="row">
             <h1>Global Header</h1>
           </div>
@@ -20,7 +21,7 @@ export default function RootLayout({ children }) {
           <div className="row">
             <h1>Global Footer</h1>
           </div>
-        </div>
+        </div> */}
       </body>
     </html>
   );

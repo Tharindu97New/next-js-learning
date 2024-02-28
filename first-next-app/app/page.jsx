@@ -1,22 +1,49 @@
+'use client'
 import Link from "next/link";
 import styles from "./page.module.css";
 import Image from "next/image";
 import img1 from '../public/1.jpg';
+import Button from "./(componets)/Button";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [inputText, setInputText] = useState("");
+
+  const handleClicked = () => {
+
+  }
+
+  const handleChange = (e) => {
+      setInputText(e.target.value);
+  }
+
   return (
     <>
-      <h1>Image Component</h1>
+      <h3> Event Handling, Creating Functions & Managing States </h3>
+      <input type="text" onChange={handleChange} />
+      <button onClick={handleClicked}>Click here</button>
+      <p>Value is: {inputText}</p>
+      {inputText == 'mcodes' && <div>
+        <h1>Members Areas</h1>
+      </div>}
+    </>
+  );
+}
+
+
+
+
+
+
+
+{/* <h1>Image Component</h1>
       <Image 
         src={img1}
         alt="Sample img"
         // style={{width: "100%", objectFit: "cover"}}
         className="imgStyle"
-      />
-    </>
-  );
-}
-
+      /> */}
 
       {/* <div>
         <h1>Home Page</h1>
